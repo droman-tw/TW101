@@ -12,9 +12,9 @@ public class Main {
 
         System.out.println(Triangle.drawRightTriangle(5));
 
-        System.out.println(Diamond.drawIsosceles(5));
+        //System.out.println(Diamond.drawIsosceles(5));
 
-        System.out.println(Diamond.drawinvertedIsosceles(5));
+       //System.out.println(Diamond.drawLowerPartDiamond(5));
 
         System.out.println(Diamond.drawDiamond(5));
     }
