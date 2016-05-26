@@ -11,5 +11,11 @@ public class Main {
         System.out.println(Triangle.drawVerticalLine(2)+"\n");
 
         System.out.println(Triangle.drawRightTriangle(5));
+
+        System.out.println(Diamond.drawIsosceles(5));
+
+        System.out.println(Diamond.drawinvertedIsosceles(5));
+
+        System.out.println(Diamond.drawDiamond(5));
     }
 }
