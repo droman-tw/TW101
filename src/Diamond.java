@@ -58,10 +58,16 @@ public class Diamond {
         }
         return triangle;
     }
-    
 
+
+    //Method to draw a complete diamond.
     public static String drawDiamond(int n){
         return drawUpperPartDiamond(n)+"\n"+ drawLowerPartDiamond(n);
+    }
+
+    //Method to draw diamond with middle name
+    public static String drawDiamondName(int n, String name){
+        return drawUpperPartDiamond(n-1)+"\n"+name+"\n"+drawLowerPartDiamond(n);
     }
 
 }
