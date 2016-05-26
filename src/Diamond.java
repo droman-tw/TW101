@@ -25,6 +25,31 @@ public class Diamond {
     }
 
 
+    public static String drawTriangleAsUpperDiamond(boolean diamond, int n){
+
+        String triangle = "";
+        int sizeLine = 1;//Size of the starting line of the triangle
+
+        for(int i=n; i>0; i--) {
+
+                if(!(diamond && i==1)){
+                    //Add empty spaces to center the line
+                    for (int j = 0; j < i - 1; j++) {
+                        triangle += " ";
+                    }
+
+                    //Add the current line to the triangle
+                    triangle += Triangle.drawHorizontalLine(sizeLine);
+                    triangle += "\n";
+                }
+
+            }
+            sizeLine += 2; //Size of the next line increases by two;
+        return triangle;
+
+    }
+
+
     public static String drawUpperPartDiamond(int n){
         return drawIsosceles(n);
     }
