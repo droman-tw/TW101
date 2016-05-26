@@ -8,6 +8,7 @@ public class Triangle {
         return "*";
     }
 
+
     //Method to draw a lines of stars given a constant
     public static String drawHorizontalLine(int n){
         String line = "";
@@ -18,15 +19,16 @@ public class Triangle {
         return line;
     }
 
+
     public static String drawVerticalLine(int n){
         String line = "";
 
         for(int i=0; i<n; i++){
             line += drawOneStar() + "\n";
         }
-
         return line;
     }
+
 
     public static String drawRightTriangle(int n){
         String triangle="";
@@ -34,7 +36,6 @@ public class Triangle {
         for(int i=1; i <= n; i++){
             triangle += drawHorizontalLine(i) + "\n";
         }
-
         return triangle;
     }
 
