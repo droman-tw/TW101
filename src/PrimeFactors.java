@@ -13,11 +13,13 @@ import java.lang.Math.*;
 public class PrimeFactors {
 
     public static ArrayList<Integer> primeFactorization(int number){
-        if(number == 1){
-            return null;
-        }
 
         ArrayList<Integer> factors = new ArrayList<Integer>();
+
+        if(number == 1){
+            return factors;
+        }
+
         boolean[] listFactors = new boolean[number];
 
         for(int i=2; i<listFactors.length; i++){
@@ -34,7 +36,7 @@ public class PrimeFactors {
                 int counter= 0;
 
                 //Traverse through all the multiples of the factor to mark them
-                while(index <= number) {
+                while(index < number) {
                     listFactors[index] = true;//Marking the multiple
                     counter++;//Increasing the counter
                     index = (i*i) + counter*i;//Getting the next multiples

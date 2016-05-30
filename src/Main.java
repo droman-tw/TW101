@@ -20,7 +20,7 @@ public class Main {
 
         System.out.println(FizzBuzz.playGame());
 
-        System.out.println(PrimeFactors.primeFactorization(1));
+        System.out.println(PrimeFactors.primeFactorization(89));
 
     }
 }
