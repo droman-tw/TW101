@@ -18,5 +18,7 @@ public class Main {
 
         System.out.println(Diamond.drawDiamondName(3,"Billy"));
 
+        System.out.println(FizzBuzz.playGame());
+
     }
 }
